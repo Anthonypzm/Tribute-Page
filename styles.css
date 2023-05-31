@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 173, 173);
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(16px, 2.5vw, 1.1em);
+}
+h1,h2,h3,h4{
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+}
+h2{
+    font-size: clamp(30px, 4vw, 3rem);
+    text-align: center;
+}
+.main-header{
+    position: relative;  
+    height: 500px;  
+    background: url(media/micro-building.jpg) no-repeat bottom;
+    background-attachment: fixed;
+    overflow: hidden;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.384);
+}
+.box{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    opacity: .6;
+    border: 5px solid black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: greenyellow;
+    right: 0;
+}
+.blue{
+    background-color: blue;
+    bottom: 0;
+}
+.yellow{
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}
+.main-header h1{
+    font-size: clamp(4.5rem, 15vw, 15rem);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.39);
+}
+.main-header img{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    height: 100%;
+}
+main{
+    position: relative;
+    top: -100px;
+    background-color: rgb(163, 163, 163);
+    margin: 0 5%;
+    padding: 0;
+    color: white;
+    border-top: 3px solid rgb(202, 202, 202);
+    border-left: 3px solid rgb(202, 202, 202);
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.dec-container{
+    padding-left: 10px;
+    background-color: rgb(94, 93, 93);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+.decoration{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    border-top: 3px solid rgb(202, 202, 202);
+    border-left: 3px solid rgb(202, 202, 202);
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}   
+.decoration:hover{
+    background-color: rgb(131, 131, 131);
+}
+.decoration:hover:last-child{
+    background-color: red;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color:rgb(163, 163, 163);
+}
+.index-nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.index-nav li{
+    display: inline-block;
+    border-left: 1px solid white;
+}
+.index-nav li:last-child{
+    border-right: 1px solid white;
+}
+.index-nav a{
+    padding: 5px 10px;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.index-nav a:hover{
+    background-color: rgb(196, 199, 199);
+}
+main > section{
+    text-align: justify;
+    color: black;
+    background-color: white;
+    margin: 0px 10px 10px 10px;
+    padding-top: 80px;
+    border-top: 3px solid rgb(73, 73, 73);
+    border-left: 3px solid rgb(73, 73, 73);
+    overflow:scroll;
+}
+article{
+    padding: 30px 50px;
+    margin-bottom: 100px;
+}
+#about-bill{
+    text-align: left;
+}
+#gate{
+    width: 50%;
+    float: right;
+    margin: 10px 0px 10px 10px;
+}
+#microsoft{
+    text-align: center;
+}
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image-gallery img{
+    width: 30%;
+    margin: 0 5px;
+}
+#foundation{
+    text-align: right;
+}
+#foundation-img{
+    width: 50%;
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+footer{
+    background-color:rgb(94, 93, 93);
+    color: white;
+    font-size: clamp(14px, 2vw, 1em);
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#about-me{
+    width: 100%;
+}
+#social-media{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#social-media li, #social-media a{
+    display: inline-block;
+}
+#social-media a{
+    padding: 10px;
+    color: white;
+}
+#references{
+    text-align: center;
+}
+#references ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#references li, #references a{
+    display: inline-block;
+    margin: 10px;
+}
+#references li{
+    margin: 5px 0;
+}
+#references a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+#references a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:1000px){
+    .image-gallery img{
+        width: 45%;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width:700px){
+    .image-gallery img{
+        width: 100%;
+        margin: 5px 0;
+    }
+    #gate{
+        width: 100%;
+        float: none;
+        margin: 5px 0;
+    }
+    #foundation-img{
+        width: 100%;
+        float: none;
+        margin: 5px 0;
+    }
+    #about-bill, #foundation{
+        text-align: center;
+    }
+    footer{
+        flex-direction:column;
+    }
+    #references li, #references a{
+        display: block;
+    }
+    hr{
+        width: 20%;
+    }
+}
